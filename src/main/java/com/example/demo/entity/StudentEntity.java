@@ -8,4 +8,13 @@ public class StudentEntity{
     private String id;
     private String email;
     private String created;
+    public String getUsername()
+    {
+        return username;
+    }
+    public void Setusername(String name)
+    {
+        this.name=name;
+    }
+    
 }
