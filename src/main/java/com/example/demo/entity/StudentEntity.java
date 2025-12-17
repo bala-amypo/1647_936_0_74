@@ -2,8 +2,16 @@ package com.example.demo.entity;
 
 
 import java.sql.Date; 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+
 @Entity
 public class StudentEntity{
+    @Id
+    @GeneratedValue(strategy=GenerationTypr.Identity)
     private String name;
     private String id;
     private String email;
@@ -58,5 +66,5 @@ public class StudentEntity{
     }
     public SampleEntity()
     {
-        
+
     }
