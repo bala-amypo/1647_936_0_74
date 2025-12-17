@@ -2,9 +2,9 @@ package com.example.demo.entity;
 
 
 import java.sql.Date; 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 
@@ -64,6 +64,7 @@ public class StudentEntity{
         this.password=password;
         this.created=created;
     }
+}
     public SampleEntity()
     {
 
