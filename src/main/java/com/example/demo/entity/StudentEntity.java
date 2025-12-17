@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 @Entity
 public class StudentEntity{
     @Id
-    @GeneratedValue(strategy=GenerationTypr.Identity)
+    @GeneratedValue(strategy=GenerationType.Identity)
     private String name;
     private String id;
     private String email;
