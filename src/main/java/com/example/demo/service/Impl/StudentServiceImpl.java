@@ -11,7 +11,7 @@ public class StudentServiceImpl implements StudentService{
     // deleteById();
     // existsById();
     public StudentEntity postData(StudentEntity stu)
-    {
+    { 
 return studennt.save(stu);
     }
 }
