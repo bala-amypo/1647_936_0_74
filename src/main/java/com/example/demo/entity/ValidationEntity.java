@@ -3,5 +3,6 @@ import jakarat.persistence.Entity;
 @Entity
 public class ValidationEntity{
     private Long id;
-    
+    private String username,email,password;
+    private Integer age;
 }
