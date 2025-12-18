@@ -7,7 +7,7 @@ import com.example.demo.entity.StudentEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
-// import org.springframework.beans.factory.annotation.Override;
+//  import org.springframework.beans.factory.annotation.Override;
 @Service
 public class StudentServiceImpl implements StudentService{
      @Autowired StudentRepository student;
@@ -30,9 +30,9 @@ public class StudentServiceImpl implements StudentService{
           return student.findById(id).orElse(null);
      }
      @Override
-     public StudentEntity updateData(int id,StudentEntity s)
+     public StudentEntity updateData(int id,StudentEntity entity)
      {
-          if(student.existsbyId(id))
+          if(student.existsById(id))
           {
                entity.setid(id);
                return student.save(entity);
