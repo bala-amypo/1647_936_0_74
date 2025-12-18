@@ -1,5 +1,3 @@
-
-
 package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +21,5 @@ public class StudentController{
     public List<StudentEntity>getvalue(){
         return ser.getAllData();
     }
-    @DeleteMapping("/delete(id)")
+    @DeleteMapping("/delete(id)")`
 }
