@@ -34,7 +34,7 @@ public class StudentServiceImpl implements StudentService{
      {
           if(student.existsById(id))
           {
-               s.setid(id);
+               s.setId(id);
                return student.save(s);
           }
           return null;
