@@ -1,20 +1,17 @@
+
+
 package com.example.demo.controller;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annoatation.RequestBody;
-import org.springframework.web.bind.annoatation.RestController;
-import org.springframework.web.bind.annoatation.postMaping;
-
-
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
-import com.springframework.demo.service.StudentService;
-
 @RestController
-public class StudentController
-{
+public class StudentController{
     @Autowired StudentService ser;
-    @postMaping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity stu)
-    {
+    @PostMapping("/post")
+    public StudentEntity sendData(@RequestBody StudentEntity stu){
         return ser.postData(stu);
     }
 }
