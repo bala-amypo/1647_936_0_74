@@ -21,7 +21,7 @@ public class StudentController{
     public List<StudentEntity>getvalue(){
         return ser.getAllData();
     }
-   @deleteMapping("/delete{id}")
+   @DeleteMapping("/delete{id}")
    public String deleteVal(@PathVariable int id)
    {
     return ser.deleteData(id);

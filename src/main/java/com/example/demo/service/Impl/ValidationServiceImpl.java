@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class ValidationServiceImpl implements ValidationService{
-     @Autowired ValidationRepo dent;
+     @Autowired ValidationRepository dent;
      
           @Override
           public ValidationEntity post(ValidationEntity stu){
