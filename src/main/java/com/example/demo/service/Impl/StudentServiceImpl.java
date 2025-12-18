@@ -20,5 +20,9 @@ public class StudentServiceImpl implements StudentService{
           return student.findAll();
      }
      @Override
-     public String Delete
+     public String DeleteData(@PathVariable int id)
+     {
+          studemt.deleteById(id);
+          return "Deleted Successfully";
+     })
 }
