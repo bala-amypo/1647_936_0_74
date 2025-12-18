@@ -22,12 +22,40 @@ public class ValidationEntity{
     @NotNull(message="Password is mandotary")
     private String password;
     @Max(20)
+    @Positive(message="Age must")
     private Integer age;
      public ValidationEntity(Long id,String username,String email,String password){
         this.id=id;
         this.username=username;
         this.email=email;
         this.password=password;
+     }  
+    public void setUername(String name){
+        this.username=username;
+    }
+    public void setEmail(String email){
+        this.email=email;
+    }
+    public void setPassword(String password){
+        this.password=password;
+    }
+    public void setId(Long id){
+        this.id=id;
+    }
+    public String getUsername(){
+        return username;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public String getPassword(){
+        return password;
+    }
+    public LonggetId(){
+        return id;
+    }
+    public ValidationEntity()
+    {
         
-            }
+    }
     }
