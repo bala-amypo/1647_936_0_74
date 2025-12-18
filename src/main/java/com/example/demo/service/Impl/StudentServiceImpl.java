@@ -37,5 +37,6 @@ public class StudentServiceImpl implements StudentService{
                entity.setid(id);
                return student.save(entity);
           }
+          return null;
      }
 }
